@@ -15,12 +15,12 @@ jobs:
     permissions:
       actions: read
       contents: read
-      security-events: write
+      security-events: write # allow CodeQl to report finding from its analysis back to github security features
 
     strategy:
-      fail-fast: false
+      fail-fast: false  # Set to fale to complete all analyses even one of them encounters an issue
       matrix:
-        language: ["python"]
+        language: ["python"]  # in case have multiple language, can add here. It'll run in parallel
 
     steps:
       - name: Checkout repository
