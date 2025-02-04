@@ -1,1 +1,10 @@
+
 /baseline/
+/run/
+
+# Virtual env
+.venv/
+
+__pycache__/
+
+/yolo*.pt
