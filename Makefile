@@ -15,6 +15,6 @@ tracking_offline:
 counting_object:
 	python3 -m src.object_counting
 
-yolo-world:
+yolo_world:
 	python3 -m src.yolo-world.custom_prompt
 
